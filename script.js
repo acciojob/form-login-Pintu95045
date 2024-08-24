@@ -1,9 +1,8 @@
 function getFormvalue() {
-    //Write your code here
-	const form=document.getElementById("form1");
-	const formData=new formData(form);
-	const firstName=formData.get('fname');
-	const lastName=formData.get('lname');
+    // Retrieve the values from the input fields
+    const firstName = document.querySelector('input[name="firstname"]').value;
+    const lastName = document.querySelector('input[name="lastname"]').value;
 
-		alert(`${firstName} ${lastName}`);
+    // Display the combined first and last names in an alert
+    alert(firstName + " " + lastName);
 }
